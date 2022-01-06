@@ -1,0 +1,17 @@
+* {
+    font-family: monospace;
+}
+
+h2 {
+    text-decoration: underline blue; 
+}
+
+hr {
+    border: 2px solid orange;
+}
+
+code {
+    color: green;
+    opacity: 0.8;
+    font-weight: 700;
+}
