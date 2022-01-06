@@ -15,3 +15,8 @@ avgTemp[3] = 38;
 avgTemp[4] = 25.5;
 
 result('#array', avgTemp[2]);
+
+var daysOfWeek = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+
+result('#days-of-week', daysOfWeek[3]);
+
