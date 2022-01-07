@@ -20,3 +20,15 @@ var daysOfWeek = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday
 
 result('#days-of-week', daysOfWeek[3]);
 
+createListDaysOfWeek(daysOfWeek);
+
+listDayOfWeek(daysOfWeek);
+
+
+// fibonacci
+var fibonacci = [0, 1];
+
+for(var initial = 2; initial < 20; initial++) {
+    fibonacci[initial] = fibonacci[initial-2]+fibonacci[initial-1];
+}
+console.log("🚀 ~ file: array.js ~ line 30 ~ fibonacci", fibonacci);

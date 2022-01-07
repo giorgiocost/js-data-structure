@@ -10,7 +10,7 @@ hr {
     border: 2px solid orange;
 }
 
-code {
+code, li {
     color: green;
     opacity: 0.8;
     font-weight: 700;
