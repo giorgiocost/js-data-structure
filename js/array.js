@@ -24,7 +24,6 @@ createListDaysOfWeek(daysOfWeek);
 
 listDayOfWeek(daysOfWeek);
 
-
 // fibonacci
 var fibonacci = [0, 1];
 
@@ -32,3 +31,17 @@ for(var initial = 2; initial < 20; initial++) {
     fibonacci[initial] = fibonacci[initial-2]+fibonacci[initial-1];
 }
 console.log("🚀 ~ file: array.js ~ line 30 ~ fibonacci", fibonacci);
+
+// inserindo elementos
+var numbers = [1, 2, 3, 4, 5, 6, 7];
+
+numbers[2] = 7;
+
+numbers.push(8);
+
+numbers.unshift(0);
+
+
+console.log("🚀 ~ file: array.js ~ line 37 ~ numbers", numbers)
+
+
