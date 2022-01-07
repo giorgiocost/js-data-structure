@@ -41,7 +41,8 @@ numbers.push(8);
 
 numbers.unshift(0);
 
+numbers.pop();
 
-console.log("🚀 ~ file: array.js ~ line 37 ~ numbers", numbers)
+numbers.shift();
 
-
+console.log("🚀 ~ file: array.js ~ line 37 ~ numbers", numbers);
