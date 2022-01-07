@@ -60,4 +60,4 @@ avgTempWeek[0] = avgTempWeek1;
 avgTempWeek[1] = avgTempWeek2;
 console.log("🚀 ~ file: array.js ~ line 61 ~ avgTempWeek", avgTempWeek[1][2]);
 
-listArray(avgTempWeek);
+listArrayBidirecional(avgTempWeek);

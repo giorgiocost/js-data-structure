@@ -23,7 +23,7 @@ function listDayOfWeek(array) {
     }
 }
 
-function listArray(array) {
+function listArrayBidirecional(array) {
     for(var i = 0; i < array.length; i++) {
         for(var j = 0; j < array[i].length; j++) {
             console.log("🚀 ~ file: array.js ~ line", array[i][j]);
