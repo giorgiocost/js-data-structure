@@ -23,10 +23,20 @@ function listDayOfWeek(array) {
     }
 }
 
-function listArrayBidirecional(array) {
+function listArrayBidirectional(array) {
     for(var i = 0; i < array.length; i++) {
         for(var j = 0; j < array[i].length; j++) {
             console.log("🚀 ~ file: array.js ~ line", array[i][j]);
         }
     }
+}
+
+function listArrayThreeDimensional() {
+    for (var x = 0; x < month.length; x++) {
+        for( var y = 0; y < month[x].length; y++) {
+            for( var z = 0; z < month[x][y].length; z++) {
+                console.log(`month - ${z}`, month[x][y][z]);
+            }
+        }
+    }    
 }
