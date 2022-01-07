@@ -50,3 +50,13 @@ numbers.splice(2, 2); // [1, 2, 7, 4, 5, 6, 7] -> remove 7, 4
 numbers.splice(2, 0, 7, 4); // inseri 7, 4
 
 console.log("🚀 ~ file: array.js ~ line 37 ~ numbers", numbers);
+
+var avgTempWeek = [];
+
+var avgTempWeek1 = [33, 25.2, 19, 27, 23.4, 41.6, 25];
+var avgTempWeek2 = [41, 29, 33, 21.2, 19.5, 17, 33.8];
+
+avgTempWeek[0] = avgTempWeek1;
+avgTempWeek[1] = avgTempWeek2;
+console.log("🚀 ~ file: array.js ~ line 61 ~ avgTempWeek", avgTempWeek[1][2]);
+
