@@ -45,4 +45,8 @@ numbers.pop();
 
 numbers.shift();
 
+numbers.splice(2, 2); // [1, 2, 7, 4, 5, 6, 7] -> remove 7, 4
+
+numbers.splice(2, 0, 7, 4); // inseri 7, 4
+
 console.log("🚀 ~ file: array.js ~ line 37 ~ numbers", numbers);
