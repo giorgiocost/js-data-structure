@@ -36,3 +36,20 @@ function Stack() {
         console.log(items.toString());
     }
 }
+
+var pilha = new Stack();
+
+pilha.push(2);
+pilha.push(4);
+pilha.push(6);
+pilha.push(8);
+pilha.push(10);
+
+pilha.pop();
+
+pilha.print();
+console.log('devolve o elemento que está no topo da pilha:', pilha.peek());
+console.log('informa o tamanho da pilha:', pilha.size());
+
+pilha.clear();
+console.log('informa se a pilha está vazia:', pilha.isEmpty());
