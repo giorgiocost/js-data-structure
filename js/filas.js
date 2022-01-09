@@ -31,3 +31,18 @@ function Queue() {
         console.log(items.toString());
     }
 }
+
+var fila = new Queue();
+
+fila.enqueue('Laranja');
+fila.enqueue('Bananar');
+fila.enqueue('Limão');
+console.log(fila.front());
+
+fila.print();
+
+fila.dequeue();
+
+fila.print();
+console.log(fila.isEmpty());
+console.log(fila.size());
