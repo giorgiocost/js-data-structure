@@ -107,3 +107,7 @@ function hatPotato(nameList, num) {
     }
     return queue.dequeue();
 }
+
+var names = ['João', 'José', 'Maria', 'Ana', 'Lucas'];
+var winner = hatPotato(names, 7);
+console.log('The winner is: ' + winner);
