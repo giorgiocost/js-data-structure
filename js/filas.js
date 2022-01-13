@@ -88,3 +88,22 @@ pqueue.enqueue('Laranja', 2);
 pqueue.enqueue('Banana', 1);
 pqueue.enqueue('Limão', 1);
 pqueue.print();
+
+function hatPotato(nameList, num) {
+    var queue = new Queue();
+
+    for (var i = 0; i < nameList.length; i++) {
+        queue.enqueue(nameList[i]);
+    }
+
+    var eliminated = '';
+
+    while (queue.size() > 1) {
+        for (var i = 0; i < num; i++) {
+            queue.enqueue(queue.dequeue());
+        }
+        eliminated = queue.dequeue();
+        console.log(eliminated + 'was eliminated from Hot Potato game');
+    }
+    return queue.dequeue();
+}
