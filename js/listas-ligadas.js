@@ -10,6 +10,22 @@ function LinkedList() {
 
     this.append = function(element) {
         // adiciona um elemento no final da lista
+        var node = new Node(element);
+        current;
+
+        if (head == null) {
+            head = node;
+        } else {
+            current = head;
+
+            while(current.next) {
+                current = current.next;
+            }
+
+            current.next = node;
+        }
+
+        length++;
     }
 
     this.inseri = function() {
