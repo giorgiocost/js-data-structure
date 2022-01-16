@@ -38,9 +38,19 @@ function LinkedList() {
 
     this.toString = function() {
         // converte para string
+        var current = head;
+        string = '';
+
+        while(current) {
+            string += current.element;
+            current = current.next;
+        }
+
+        return string;
     }
 
     this.print = function() {
         // imprime no console
+        console.log(this.toString);
     }
 }
