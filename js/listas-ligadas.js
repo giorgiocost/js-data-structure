@@ -10,7 +10,7 @@ function LinkedList() {
 
     this.append = function(element) {
         // adiciona um elemento no final da lista
-        var node = new Node(element);
+        var node = new Node(element),
         current;
 
         if (head == null) {
@@ -54,7 +54,7 @@ function LinkedList() {
 
     this.toString = function() {
         // converte para string
-        var current = head;
+        var current = head,
         string = '';
 
         while(current) {
@@ -67,6 +67,13 @@ function LinkedList() {
 
     this.print = function() {
         // imprime no console
-        console.log(this.toString);
+        console.log(this.toString());
     }
 }
+
+var linkedList = new LinkedList();
+linkedList.append('João ');
+linkedList.append('José ');
+linkedList.append('Maria ');
+
+linkedList.print();
