@@ -34,6 +34,25 @@ function LinkedList() {
 
     this.removeAt = function(position) {
         // remove o elemento de uma posição específica
+        if (position > -1 && position < length) {
+            var current = head,
+            previous,
+            index = 0;
+
+            if (position === 0) {
+                head = current.next;
+            } else {
+                while(index++ < position) {
+                    previous = current;
+                    current = current.next;
+                }
+                previous.next = current.next;
+            }
+            length--;
+            return current.element;
+        } else {
+            return null;
+        }
     }
 
     this.remove = function(element) {
@@ -58,7 +77,7 @@ function LinkedList() {
         string = '';
 
         while(current) {
-            string += current.element;
+            string += current.element + ' ';
             current = current.next;
         }
 
@@ -72,8 +91,9 @@ function LinkedList() {
 }
 
 var linkedList = new LinkedList();
-linkedList.append('João ');
-linkedList.append('José ');
-linkedList.append('Maria ');
-
+linkedList.append('João');
+linkedList.append('José');
+linkedList.append('Maria');
+linkedList.print();
+linkedList.removeAt(1);
 linkedList.print();
